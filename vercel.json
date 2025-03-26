@@ -1,0 +1,38 @@
+{
+    "rewrites": [
+      {
+        "source": "/tic-tac-toe/:match*",
+        "destination": "https://tic-tac-toe-lab-sigma.vercel.app/:match*"
+      },
+      {
+        "source": "/password-generator/:match*",
+        "destination": "https://password-generator-sand-theta.vercel.app/:match*"
+      },
+      {
+        "source": "/moment-js-workday-scheduler/:match*",
+        "destination": "https://moment-js-workday-scheduler.vercel.app/:match*"
+      },
+      {
+        "source": "/tamagotchi/:match*",
+        "destination": "https://tamagotchi-pied-one.vercel.app/:match*"
+      },
+      {
+        "source": "/web-api-code-quiz/:match*",
+        "destination": "https://web-api-code-quiz-murex.vercel.app/:match*"
+      },
+      {
+        "source": "/shopping-simulator/:match*",
+        "destination": "https://shopping-simulator.vercel.app/:match*"
+      },
+      {
+        "source": "/cyberrealm/:match*",
+        "destination": "https://cyberrealm.vercel.app/:match*"
+      },
+      {
+        "source": "/:path*",
+        "destination": "/index.html"
+      } 
+    ]
+  }
+
+  
