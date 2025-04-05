@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Harmattan&display=swap');
+
+:root {
+  --pink-muted: #E5B7C1;
+  --charcoal: rgba(28, 29, 33, 0.85);
+  --text-light: #ffffff;
+  --glow-pink: rgba(229, 183, 193, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1a1a1a;
+  background-size: cover;
+  font-family: 'Harmattan', sans-serif;
+  color: var(--text-light);
+  min-height: 100vh;
+  line-height: 1.6;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+#root {
+  min-height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.title {
+  font-family: 'Black Bones', cursive;
+  font-weight: normal;
+  font-style: normal;
+  color: var(--pink-muted);
+}
+
+.subtitle {
+  font-family: 'Harmattan', sans-serif;
+  color: var(--text-light);
+} 

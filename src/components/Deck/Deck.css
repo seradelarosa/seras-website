@@ -1,0 +1,249 @@
+.deck-container {
+  padding: 2rem;
+  position: relative;
+  overflow: visible;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  color: var(--pink-muted);
+  margin-top: 6rem;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  font-family: 'Black Bones', cursive;
+  text-shadow: 0 0 10px var(--glow-pink);
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+}
+
+.deck-grid {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  transition: transform 0.5s ease;
+  position: relative;
+  width: 100%;
+}
+
+.deck-card {
+  width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  background: linear-gradient(135deg, #3d4856 0%, #2a343f 100%);
+  padding: 0.8rem;
+  border: 5px solid #4e5a6a;
+  flex-shrink: 0;
+}
+
+.deck-card::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  border-radius: 5px;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  pointer-events: none;
+}
+
+.deck-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.deck-card-content {
+  font-family: 'Harmattan', sans-serif;
+  padding: 1rem;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  height: 94%;
+  background-color: #f0f0f2d3;
+  border-radius: 5px;
+  position: relative;
+  margin: 0;
+}
+
+.deck-card-title {
+  color: #3d4856;
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #c8aa6e97;
+  width: 100%;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.deck-card-content h3 {
+  color: #4a4a4a;
+  font-size: 1.1rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0.5rem 0 0.3rem 0;
+}
+
+.deck-card-content ul {
+  align-self: flex-start;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+.deck-card-content li {
+  text-align: left;
+  position: relative;
+  padding-left: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  color: #4a4a4a;
+}
+
+.deck-card-content li::before {
+  content: "•";
+  color: #4e5a6a;
+  font-weight: normal;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+  top: -0.1rem;
+}
+
+.deck-card-description {
+  align-self: flex-start;
+  text-align: left;
+  margin: 0.3rem 0 0.7rem 0;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #5e5e5e;
+  border-left: 3px solid #6b5b95be;
+  padding-left: 0.8rem;
+}
+
+/* Card type variations */
+.deck-card:nth-child(1) {
+  background: #5e6d8097;
+  border-color: #4e5a6ab1;
+  border-radius: 5px;
+}
+
+.deck-card:nth-child(2) {
+  background: #6b5b958a;
+  border-color: #6b5b9550;
+  border-radius: 5px;
+}
+
+.deck-card:nth-child(3) {
+  background: #6b9bc4e2;
+  border-color: #6b9bc4;
+  border-radius: 5px;
+}
+
+.deck-card:nth-child(4) {
+  background: #f1d4619d;
+  border-color: #f1d4617c;
+  border-radius: 5px;
+}
+
+/* Navigation buttons */
+.deck-navigation {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.deck-nav-button {
+  background-color: var(--pink-muted);
+  color: var(--charcoal);
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  position: relative;
+  z-index: 20;
+}
+
+.deck-nav-button:hover {
+  background-color: var(--pink);
+}
+
+.deck-nav-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .deck-container {
+    padding: 1rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .deck-grid {
+    gap: 1.5rem;
+  }
+  
+  .deck-card {
+    width: 280px;
+    padding: 0.6rem;
+    border-width: 8px;
+  }
+  
+  .deck-card-content {
+    padding: 1rem;
+  }
+  
+  .deck-card-title {
+    font-size: 1.3rem;
+  }
+  
+  .deck-navigation {
+    padding: 0 0.5rem;
+  }
+  
+  .deck-nav-button {
+    width: 28px;
+    height: 34px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .deck-grid {
+    justify-content: center;
+  }
+} 

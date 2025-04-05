@@ -1,0 +1,137 @@
+:root {
+    --pink-muted: #E5B7C1;
+    --charcoal: rgba(28, 29, 33, 0.85);
+    --text-light: #ffffff;
+    --glow-pink: rgba(229, 183, 193, 0.2);
+  }
+
+@font-face {
+  font-family: 'Black Bones';
+  src: url('/fonts/blackbones.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.bio-container {
+  width: 100%;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+  overflow-x: hidden;
+}
+
+.bio-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name {
+  font-family: 'Black Bones', cursive;
+  font-size: 4rem;
+  color: var(--pink-muted);
+  margin-top: 3rem;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px var(--glow-pink);
+  font-weight: normal;
+  font-style: normal;
+}
+
+.subtitle {
+  font-family: 'Harmattan', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: var(--text-light);
+  width: 80%;
+  margin-top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-container {
+  width: 50%;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.profile-image {
+  margin-top: 1rem;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 3px;
+}
+
+.bio-content {
+  background-color: var(--charcoal);
+  padding: 2rem;
+  border-radius: 4px;
+  margin: 2rem 0 0;
+  width: 75%;
+  box-shadow: 0 0 20px var(--glow-pink);
+  font-size: 1rem;
+  line-height: 1.6;
+  display: flex;
+  align-items: flex-start; 
+  flex-direction: column;
+}
+
+.bio-content p {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.bio-section {
+  margin-bottom: 2rem;
+}
+
+.bio-section-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.bio-text {
+  margin-bottom: 1rem;
+}
+
+/* Mobile-first responsive design */
+@media (min-width: 768px) {
+  .profile-container {
+    width: 60%;
+  }
+
+  .bio-content {
+    width: 80%;
+    max-width: 800px;
+  }
+
+  .title {
+    font-size: 4.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 0.9rem;
+  }
+} 
