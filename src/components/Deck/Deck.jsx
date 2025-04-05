@@ -12,6 +12,8 @@ const Deck = () => {
                 setCardsPerView(1);
             } else if (window.innerWidth <= 1024) {
                 setCardsPerView(2);
+            } else if (window.innerWidth <= 1400) {
+                setCardsPerView(3);
             } else {
                 setCardsPerView(4);
             }
