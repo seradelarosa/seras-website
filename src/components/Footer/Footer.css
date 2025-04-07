@@ -73,10 +73,28 @@
   stroke: var(--pink-muted);
 }
 
+@media (min-width: 310px) {
+  footer-nav {
+    gap: 0;
+    margin: 0;
+  }
+
+  .footer-nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-family: 'Harmattan', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0;
+    transition: color 0.3s ease;
+  }
+}
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .footer {
-    padding: 0.8rem 0;
+    padding: 0;
+    margin: 0 !important;
+    width: 100%;
   }
 
   .footer-nav {

@@ -160,8 +160,7 @@
 /* Navigation buttons */
 .deck-navigation {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0%;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -204,6 +203,8 @@
 @media (max-width: 768px) {
   .deck-container {
     padding: 1rem;
+    display: flex;
+    justify-content: center;
   }
   
   .title {
@@ -214,6 +215,8 @@
   .deck-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
+    display: flex;
+    justify-content: center;
   }
   
   .deck-card {
@@ -243,9 +246,16 @@
 
 /* Tablet styles */
 @media (min-width: 769px) and (max-width: 1024px) {
+  .deck-container {
+    display: flex;
+    justify-content: center;
+  }
+
   .deck-grid {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+    display: flex;
+    justify-content: center;
   }
   
   .deck-card {
@@ -255,9 +265,16 @@
 
 /* Medium-large screen styles */
 @media (min-width: 1025px) and (max-width: 1400px) {
+  .deck-container {
+    display: flex;
+    justify-content: center;
+  }
+
   .deck-grid {
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
+    display: flex;
+    justify-content: center;
   }
   
   .deck-card {

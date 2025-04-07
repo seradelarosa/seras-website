@@ -18,7 +18,7 @@ const Bio = () => {
           />
         </div>
         <div className="bio-text-container">
-          <p>
+          <p class="bio">
             As a Software Engineer specializing in business technology, I blend
             hands-on software and hardware expertise with corporate tech leadership.
             With eight years in corporate technology, I pioneered solutions for
