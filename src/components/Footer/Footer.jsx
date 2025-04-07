@@ -14,7 +14,6 @@ const Footer = () => {
           <a href="#bio">About</a>
           <a href="#deck">Deck</a>
           <a href="#portfolio">Portfolio</a>
-          <a href="#">Contact</a>
         </nav>
         <div className="footer-social">
           <a href="https://github.com/seradelarosa" target="_blank" rel="noopener noreferrer">

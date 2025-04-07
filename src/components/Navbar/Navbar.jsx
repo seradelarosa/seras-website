@@ -49,7 +49,6 @@ const Navbar = () => {
           <li><a href="#bio" onClick={closeMenu}>About</a></li>
           <li><a href="#deck" onClick={closeMenu}>Deck</a></li>
           <li><a href="#portfolio" onClick={closeMenu}>Portfolio</a></li>
-          <li><a href="#" onClick={closeMenu}>Contact</a></li>
         </ul>
       </div>
 
